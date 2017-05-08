@@ -1,0 +1,8 @@
+<h1>Guests for Episode <%= @episode.number %></h1>
+
+<% @episode.guests.each do |guest|%>
+<li><%= link_to guest.name, guest_path(guest) %></li>
+<% end %>
+
+<%= link_to 'Return to Episode List', episodes_path%><br>
+<%= link_to 'Return to Your Homepage', user_path%>

@@ -1,0 +1,11 @@
+<h1>New Appearance</h1>
+
+<%= form_for(@appearance) do |f| %>
+  <%= f.label :episode_id %>
+  <%= f.text_field :episode_id %>
+  <%= f.label :guest_id %>
+  <%= f.text_field :guest_id %>
+  <%= f.label 'Rating (scale of 1-5)' %>
+  <%= f.number_field :rating %>
+  <%= f.submit 'Create a New Appearance' %>
+<% end %>
